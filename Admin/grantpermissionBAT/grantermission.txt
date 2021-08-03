@@ -1,0 +1,12 @@
+set expdate=(Date_(MM_DD_YYYY)_%date:~0,2%-%date:~3,2%-%date:~6,4%)-(Time_%time:~0,2%%time:~3,2%)
+
+sqlplus "bankadmin/9122335311"
+
+GRANT ALL PRIVILEGES TO bankadmin;
+
+grant imp_full_database,exp_full_database to bankadmin;
+
+
+"NECESSARY PERMISSION BEFORE TAKING BACKUP"
+
+https://stackoverflow.com/questions/50879063/run-a-batch-program-bat-through-a-visual-basic-6-0#:~:text=bat'%20is%20batch%20file%20and,command%20in%20a%20text%20box.
